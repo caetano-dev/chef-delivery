@@ -1,10 +1,3 @@
-//
-//  ChefDeliveryApp.swift
-//  ChefDelivery
-//
-//  Created by Pedro Caetano on 12/10/23.
-//
-
 import SwiftUI
 
 @main

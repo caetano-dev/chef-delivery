@@ -11,6 +11,15 @@
 		EF4059DD2AD808FB00152254 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4059DC2AD808FB00152254 /* ContentView.swift */; };
 		EF4059DF2AD808FC00152254 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF4059DE2AD808FC00152254 /* Assets.xcassets */; };
 		EF4059E22AD808FC00152254 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF4059E12AD808FC00152254 /* Preview Assets.xcassets */; };
+		EF4059EB2AD80A9C00152254 /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4059EA2AD80A9C00152254 /* NavigationBar.swift */; };
+		EF4059EE2AD80E6500152254 /* OrderTypeGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4059ED2AD80E6500152254 /* OrderTypeGridView.swift */; };
+		EF4059F12AD8114E00152254 /* OrderType.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4059F02AD8114E00152254 /* OrderType.swift */; };
+		EF4059F32AD811B400152254 /* DataSourceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4059F22AD811B400152254 /* DataSourceMock.swift */; };
+		EF4059F52AD815A200152254 /* OrderTypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4059F42AD815A200152254 /* OrderTypeView.swift */; };
+		EF4059F82AD81B4C00152254 /* CarouselItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4059F72AD81B4C00152254 /* CarouselItemView.swift */; };
+		EF4059FA2AD81C5100152254 /* CarouselTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4059F92AD81C5100152254 /* CarouselTabView.swift */; };
+		EF4059FD2AD81F9600152254 /* StoreItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4059FC2AD81F9600152254 /* StoreItemView.swift */; };
+		EF4059FF2AD821C700152254 /* StoresContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4059FE2AD821C700152254 /* StoresContainerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +28,15 @@
 		EF4059DC2AD808FB00152254 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EF4059DE2AD808FC00152254 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EF4059E12AD808FC00152254 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EF4059EA2AD80A9C00152254 /* NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
+		EF4059ED2AD80E6500152254 /* OrderTypeGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderTypeGridView.swift; sourceTree = "<group>"; };
+		EF4059F02AD8114E00152254 /* OrderType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderType.swift; sourceTree = "<group>"; };
+		EF4059F22AD811B400152254 /* DataSourceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSourceMock.swift; sourceTree = "<group>"; };
+		EF4059F42AD815A200152254 /* OrderTypeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderTypeView.swift; sourceTree = "<group>"; };
+		EF4059F72AD81B4C00152254 /* CarouselItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselItemView.swift; sourceTree = "<group>"; };
+		EF4059F92AD81C5100152254 /* CarouselTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselTabView.swift; sourceTree = "<group>"; };
+		EF4059FC2AD81F9600152254 /* StoreItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreItemView.swift; sourceTree = "<group>"; };
+		EF4059FE2AD821C700152254 /* StoresContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoresContainerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +69,12 @@
 		EF4059D92AD808FB00152254 /* ChefDelivery */ = {
 			isa = PBXGroup;
 			children = (
-				EF4059DA2AD808FB00152254 /* ChefDeliveryApp.swift */,
-				EF4059DC2AD808FB00152254 /* ContentView.swift */,
+				EF4059FB2AD81F8700152254 /* StoresView */,
+				EF4059F62AD81B3600152254 /* CarouselView */,
+				EF4059EF2AD8112F00152254 /* Model */,
+				EF4059EC2AD80E3C00152254 /* GridView */,
+				EF4059E92AD80A7B00152254 /* App */,
+				EF4059E82AD80A6600152254 /* NavigationBar */,
 				EF4059DE2AD808FC00152254 /* Assets.xcassets */,
 				EF4059E02AD808FC00152254 /* Preview Content */,
 			);
@@ -65,6 +87,59 @@
 				EF4059E12AD808FC00152254 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EF4059E82AD80A6600152254 /* NavigationBar */ = {
+			isa = PBXGroup;
+			children = (
+				EF4059EA2AD80A9C00152254 /* NavigationBar.swift */,
+			);
+			path = NavigationBar;
+			sourceTree = "<group>";
+		};
+		EF4059E92AD80A7B00152254 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				EF4059DA2AD808FB00152254 /* ChefDeliveryApp.swift */,
+				EF4059DC2AD808FB00152254 /* ContentView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		EF4059EC2AD80E3C00152254 /* GridView */ = {
+			isa = PBXGroup;
+			children = (
+				EF4059ED2AD80E6500152254 /* OrderTypeGridView.swift */,
+				EF4059F42AD815A200152254 /* OrderTypeView.swift */,
+			);
+			path = GridView;
+			sourceTree = "<group>";
+		};
+		EF4059EF2AD8112F00152254 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EF4059F02AD8114E00152254 /* OrderType.swift */,
+				EF4059F22AD811B400152254 /* DataSourceMock.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EF4059F62AD81B3600152254 /* CarouselView */ = {
+			isa = PBXGroup;
+			children = (
+				EF4059F72AD81B4C00152254 /* CarouselItemView.swift */,
+				EF4059F92AD81C5100152254 /* CarouselTabView.swift */,
+			);
+			path = CarouselView;
+			sourceTree = "<group>";
+		};
+		EF4059FB2AD81F8700152254 /* StoresView */ = {
+			isa = PBXGroup;
+			children = (
+				EF4059FC2AD81F9600152254 /* StoreItemView.swift */,
+				EF4059FE2AD821C700152254 /* StoresContainerView.swift */,
+			);
+			path = StoresView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +213,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF4059DD2AD808FB00152254 /* ContentView.swift in Sources */,
+				EF4059F82AD81B4C00152254 /* CarouselItemView.swift in Sources */,
+				EF4059EE2AD80E6500152254 /* OrderTypeGridView.swift in Sources */,
+				EF4059F32AD811B400152254 /* DataSourceMock.swift in Sources */,
+				EF4059FF2AD821C700152254 /* StoresContainerView.swift in Sources */,
+				EF4059F52AD815A200152254 /* OrderTypeView.swift in Sources */,
+				EF4059FD2AD81F9600152254 /* StoreItemView.swift in Sources */,
 				EF4059DB2AD808FB00152254 /* ChefDeliveryApp.swift in Sources */,
+				EF4059EB2AD80A9C00152254 /* NavigationBar.swift in Sources */,
+				EF4059F12AD8114E00152254 /* OrderType.swift in Sources */,
+				EF4059FA2AD81C5100152254 /* CarouselTabView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
