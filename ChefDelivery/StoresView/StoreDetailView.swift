@@ -3,6 +3,8 @@ import SwiftUI
 struct StoreDetailView: View {
     
     let store: StoreType
+    @Environment(\.presentationMode) var presentationMode
+    @State private var selectedProduct: ProductType?
     
     var body: some View {
         ScrollView {
@@ -37,28 +39,55 @@ struct StoreDetailView: View {
                     .bold()
                     .padding()
                 
+                
+                ForEach(store.products){ product in
+                    Button{
+                        selectedProduct = product
+                        
+                    } label:{
+                        HStack(spacing: 8){
+                            VStack(alignment: .leading, spacing: 8){
+                                Text(product.name)
+                                    .bold()
+                                Text(product.description)
+                                    .foregroundStyle(Color.black.opacity(0.5))
+                                    .multilineTextAlignment(.leading)
+                                Text(product.formattedPrice)
+                                
+                            }
+                            Spacer()
+                            Image(product.image)
+                                .resizable()
+                                .scaledToFit()
+                                .clipShape(.buttonBorder)
+                                .frame(width: 120, height: 120)
+                                .shadow(color: .black.opacity(0.3), radius: 20, x:6, y:8)
+                        }
+                        .padding()
+                        .foregroundStyle(Color.black)
+                    }
+                    .sheet(item: $selectedProduct){
+                        product in
+                        ProductDetailView(product: product)
+                    }
+                    
+                }
             }
             .navigationTitle(store.name)
-            ForEach(store.products){ product in
-                HStack(spacing: 8){
-                    VStack(alignment: .leading, spacing: 8){
-                        Text(product.name)
-                            .bold()
-                        Text(product.description)
-                            .foregroundStyle(Color.black.opacity(0.5))
-                        Text("\(product.price)")
-                        
+            .navigationBarBackButtonHidden()
+            .toolbar{
+                ToolbarItem(placement: .topBarLeading){
+                    Button{
+                        presentationMode.wrappedValue.dismiss()
+                    } label: {
+                        HStack(spacing: 4){
+                            Image(systemName: "cart")
+                            Text("Lojas")
+                        }
+                        .foregroundStyle(Color("ColorRed"))
                     }
-                    Spacer()
-                    Image(product.image)
-                        .resizable()
-                        .scaledToFit()
-                        .clipShape(.buttonBorder)
-                        .frame(width: 120, height: 120)
-                        .shadow(color: .black.opacity(0.3), radius: 20, x:6, y:8)
+                    
                 }
-                .padding()
-                
             }
         }
     }
