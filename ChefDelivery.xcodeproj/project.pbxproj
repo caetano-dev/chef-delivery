@@ -20,6 +20,9 @@
 		EF4059FA2AD81C5100152254 /* CarouselTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4059F92AD81C5100152254 /* CarouselTabView.swift */; };
 		EF4059FD2AD81F9600152254 /* StoreItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4059FC2AD81F9600152254 /* StoreItemView.swift */; };
 		EF4059FF2AD821C700152254 /* StoresContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4059FE2AD821C700152254 /* StoresContainerView.swift */; };
+		EF8B67062ADC3707008FCD31 /* StoreDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8B67052ADC3707008FCD31 /* StoreDetailView.swift */; };
+		EF8B67082ADC3990008FCD31 /* StoreType.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8B67072ADC3990008FCD31 /* StoreType.swift */; };
+		EF8B670A2ADC39C5008FCD31 /* ProductType.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8B67092ADC39C5008FCD31 /* ProductType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +40,9 @@
 		EF4059F92AD81C5100152254 /* CarouselTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselTabView.swift; sourceTree = "<group>"; };
 		EF4059FC2AD81F9600152254 /* StoreItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreItemView.swift; sourceTree = "<group>"; };
 		EF4059FE2AD821C700152254 /* StoresContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoresContainerView.swift; sourceTree = "<group>"; };
+		EF8B67052ADC3707008FCD31 /* StoreDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreDetailView.swift; sourceTree = "<group>"; };
+		EF8B67072ADC3990008FCD31 /* StoreType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreType.swift; sourceTree = "<group>"; };
+		EF8B67092ADC39C5008FCD31 /* ProductType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +126,8 @@
 			children = (
 				EF4059F02AD8114E00152254 /* OrderType.swift */,
 				EF4059F22AD811B400152254 /* DataSourceMock.swift */,
+				EF8B67072ADC3990008FCD31 /* StoreType.swift */,
+				EF8B67092ADC39C5008FCD31 /* ProductType.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -138,6 +146,7 @@
 			children = (
 				EF4059FC2AD81F9600152254 /* StoreItemView.swift */,
 				EF4059FE2AD821C700152254 /* StoresContainerView.swift */,
+				EF8B67052ADC3707008FCD31 /* StoreDetailView.swift */,
 			);
 			path = StoresView;
 			sourceTree = "<group>";
@@ -213,15 +222,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF4059DD2AD808FB00152254 /* ContentView.swift in Sources */,
+				EF8B670A2ADC39C5008FCD31 /* ProductType.swift in Sources */,
 				EF4059F82AD81B4C00152254 /* CarouselItemView.swift in Sources */,
 				EF4059EE2AD80E6500152254 /* OrderTypeGridView.swift in Sources */,
 				EF4059F32AD811B400152254 /* DataSourceMock.swift in Sources */,
 				EF4059FF2AD821C700152254 /* StoresContainerView.swift in Sources */,
 				EF4059F52AD815A200152254 /* OrderTypeView.swift in Sources */,
 				EF4059FD2AD81F9600152254 /* StoreItemView.swift in Sources */,
+				EF8B67062ADC3707008FCD31 /* StoreDetailView.swift in Sources */,
 				EF4059DB2AD808FB00152254 /* ChefDeliveryApp.swift in Sources */,
 				EF4059EB2AD80A9C00152254 /* NavigationBar.swift in Sources */,
 				EF4059F12AD8114E00152254 /* OrderType.swift in Sources */,
+				EF8B67082ADC3990008FCD31 /* StoreType.swift in Sources */,
 				EF4059FA2AD81C5100152254 /* CarouselTabView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
