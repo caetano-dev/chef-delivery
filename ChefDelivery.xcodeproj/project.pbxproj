@@ -20,6 +20,7 @@
 		EF4059FA2AD81C5100152254 /* CarouselTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4059F92AD81C5100152254 /* CarouselTabView.swift */; };
 		EF4059FD2AD81F9600152254 /* StoreItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4059FC2AD81F9600152254 /* StoreItemView.swift */; };
 		EF4059FF2AD821C700152254 /* StoresContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4059FE2AD821C700152254 /* StoresContainerView.swift */; };
+		EF44F7A72B2F25E200363CA5 /* HomeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF44F7A62B2F25E200363CA5 /* HomeService.swift */; };
 		EF58BD0C2ADC8DF300498E47 /* StoreDetailHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF58BD0B2ADC8DF300498E47 /* StoreDetailHeaderView.swift */; };
 		EF58BD0E2ADC8EEA00498E47 /* StoreDetailsProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF58BD0D2ADC8EEA00498E47 /* StoreDetailsProductView.swift */; };
 		EF58BD102ADC918700498E47 /* StoreDetailProductItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF58BD0F2ADC918700498E47 /* StoreDetailProductItemView.swift */; };
@@ -49,6 +50,7 @@
 		EF4059F92AD81C5100152254 /* CarouselTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselTabView.swift; sourceTree = "<group>"; };
 		EF4059FC2AD81F9600152254 /* StoreItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreItemView.swift; sourceTree = "<group>"; };
 		EF4059FE2AD821C700152254 /* StoresContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoresContainerView.swift; sourceTree = "<group>"; };
+		EF44F7A62B2F25E200363CA5 /* HomeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeService.swift; sourceTree = "<group>"; };
 		EF58BD0B2ADC8DF300498E47 /* StoreDetailHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreDetailHeaderView.swift; sourceTree = "<group>"; };
 		EF58BD0D2ADC8EEA00498E47 /* StoreDetailsProductView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreDetailsProductView.swift; sourceTree = "<group>"; };
 		EF58BD0F2ADC918700498E47 /* StoreDetailProductItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreDetailProductItemView.swift; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 		EF4059D92AD808FB00152254 /* ChefDelivery */ = {
 			isa = PBXGroup;
 			children = (
+				EF44F7A52B2F25CB00363CA5 /* Networking */,
 				EF98FF642AE0915200B2CAE9 /* HomeView */,
 				EFD02B942ADC67500087F118 /* ProductView */,
 				EFD02B912ADC625B0087F118 /* Extension */,
@@ -170,6 +173,14 @@
 				EF4059FE2AD821C700152254 /* StoresContainerView.swift */,
 			);
 			path = StoresView;
+			sourceTree = "<group>";
+		};
+		EF44F7A52B2F25CB00363CA5 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				EF44F7A62B2F25E200363CA5 /* HomeService.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 		EF58BD0A2ADC8DC400498E47 /* StoreDetailView */ = {
@@ -286,6 +297,7 @@
 				EF58BD0E2ADC8EEA00498E47 /* StoreDetailsProductView.swift in Sources */,
 				EF8B670A2ADC39C5008FCD31 /* ProductType.swift in Sources */,
 				EF4059F82AD81B4C00152254 /* CarouselItemView.swift in Sources */,
+				EF44F7A72B2F25E200363CA5 /* HomeService.swift in Sources */,
 				EF58BD142ADC93C100498E47 /* ProductDetailQuantityView.swift in Sources */,
 				EF4059EE2AD80E6500152254 /* OrderTypeGridView.swift in Sources */,
 				EFD02B932ADC62770087F118 /* Double+.swift in Sources */,

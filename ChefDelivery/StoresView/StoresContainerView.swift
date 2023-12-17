@@ -6,8 +6,10 @@ struct StoresContainerView: View {
     
     @State private var ratingFilter = 0
     
+    var stores: [StoreType]
+    
     var filteredStores: [StoreType] {
-        return storesMock.filter { store in
+        return stores.filter { store in
             store.stars >= ratingFilter
         }
     }
@@ -71,6 +73,6 @@ struct StoresContainerView: View {
 
 struct StoresContainer_Preview: PreviewProvider{
     static var previews: some View{
-        StoresContainerView().previewLayout(.sizeThatFits)
+        StoresContainerView(stores: storesMock).previewLayout(.sizeThatFits)
     }
 }
