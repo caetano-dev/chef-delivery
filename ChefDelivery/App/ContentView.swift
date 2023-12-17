@@ -27,6 +27,7 @@ struct ContentView: View {
             Task{
                 await getStores()
             }
+            getStoresWithAlamofire()
         }
     }
     
@@ -47,6 +48,13 @@ struct ContentView: View {
             
         }
         
+    }
+    
+    func getStoresWithAlamofire(){
+        service.fetchDataWithAlamofile{ stores, error in
+            print(stores)
+            
+        }
     }
     
 }
